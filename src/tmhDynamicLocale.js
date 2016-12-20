@@ -46,7 +46,7 @@ angular.module('tmh.dynamicLocale', []).config(['$provide', function($provide) {
    */
   function loadScript(url, callback, errorCallback, $timeout) {
     var script = document.createElement('script'),
-      element = nodeToAppend ? nodeToAppend : document.getElementsByTagName("body")[0],
+      element = nodeToAppend ? nodeToAppend : document.getElementsByTagName("head")[0],
       removed = false;
 
     script.type = 'text/javascript';
